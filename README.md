@@ -1,5 +1,5 @@
 # shapenet_part_experiments
-This repository contains part segmentation experiments conducted on the ShapeNet dataset.
+This repository contains part segmentation experiments conducted on the ShapeNetPart dataset.
 
 ## Dataset
 The ShapeNetPart dataset is annotated for 3D object part segmentation. It consists of 16,880 models
