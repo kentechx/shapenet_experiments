@@ -1,4 +1,4 @@
-# shapenet_experiments
+# shapenet_part_experiments
 This repository contains part segmentation experiments conducted on the ShapeNet dataset.
 
 ## Dataset
