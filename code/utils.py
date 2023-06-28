@@ -91,8 +91,10 @@ def get_ins_mious(pred, target, cls, cls2parts):
             target_part = target[shape_idx] == part
             I = torch.logical_and(pred_part, target_part).sum()
             U = torch.logical_or(pred_part, target_part).sum()
-            if U > 0:
+            if U == 0:
+                iou = torch.tensor(1.).to(pred).float()  # If the union of groundtruth and prediction points is empty, then count part IoU as 1
+            else:
                 iou = I.float() / U.float()
-                part_ious.append(iou)
+            part_ious.append(iou)
         ins_mious.append(torch.mean(torch.stack(part_ious)))
     return torch.stack(ins_mious)
