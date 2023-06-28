@@ -15,7 +15,7 @@ from dataset.shapenet import ShapeNetPart
 from utils import get_ins_mious, Poly1FocalLoss
 
 
-# enable_taichi()
+enable_taichi()
 
 
 class LitModel(pl.LightningModule):
