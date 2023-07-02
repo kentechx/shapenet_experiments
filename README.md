@@ -33,14 +33,13 @@ The processed dataset will be downloaded automatically when running the training
 
 ## Results
 
-The table below presents the classification accuracy of the models on the ShapeNetPart dataset with 2048 points.
-The experiments are conducted on a single Nvidia RTX 3090 GPU.
+The table below presents the instance mIoU and class mIoU of the models on the ShapeNetPart dataset with 2048 points.
 
-| Model        | input | ins. mIoU | cls. mIoU |
-|--------------|-------|-----------|-----------|
-| PointNet2SSG | xyz   | 84.8%     | 82.0%     |
-| PointNet2MSG | xyz   | 85.2%     | 82.5%     |
-| DGCNN        | xyz   | 85.4%     | 83.1%     |
+| Model        | input | ins. mIoU | cls. mIoU | device  |
+|--------------|-------|-----------|-----------|---------|
+| PointNet2SSG | xyz   | 84.8%     | 82.0%     | 1x 3090 |
+| PointNet2MSG | xyz   | 85.2%     | 82.5%     | 1x 3090 |
+| DGCNN        | xyz   | 85.4%     | 83.1%     | 1x 3090 |
 
 You can reproduce the results by running the corresponding scripts in the `code` folder with default configurations.
 For example, to train the PointNet model, run the following command
