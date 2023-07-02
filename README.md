@@ -42,9 +42,9 @@ The table below presents the instance mIoU and class mIoU of the models on the S
 | DGCNN        | xyz   | 85.4%     | 83.1%     | 1x 3090 |
 
 You can reproduce the results by running the corresponding scripts in the `code` folder with default configurations.
-For example, to train the PointNet model, run the following command
+For example, to train the PointNet2 model, run the following command
 
 ```bash
-python code/train_pointnet.py
+python code/train_pointnet2.py
 ```
 
